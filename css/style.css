@@ -1,0 +1,20 @@
+.banner {
+  padding: 50px 0;
+}
+
+.challenge {
+  padding: 50px 0;
+}
+
+.challenge .card {
+  border: none;
+  margin: 20px 0;
+}
+
+.dummy-img {
+  background: rgb(123, 238, 171);
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
