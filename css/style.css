@@ -2,11 +2,71 @@
   position: relative;
   overflow: hidden;
 }
+h1,
+.h1 {
+  font-size: 4.5rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+h5 {
+  font-weight: 600;
+}
+@media (max-width: 1199px) {
+  h1,
+  .h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  h1,
+  .h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/*== start: header ==*/
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #fff;
+  z-index: 1;
+  border-bottom: 1px solid rgb(172, 223, 206);
+}
+header .btn {
+  border-radius: 20px;
+  padding: 5px 25px;
+}
+
+.header,
+.banner {
+  position: relative;
+}
+
+@media (max-width: 991px) {
+  header .btn {
+    display: none;
+  }
+  .navbar-nav {
+    padding-top: 10px;
+  }
+  .navbar-nav .nav-item {
+    border-top: 1px solid #eee;
+  }
+}
+/*== end: header ==*/
+
+/*== start: banner ==*/
 .banner {
   padding: 120px 0 100px 0;
   font-size: 24px;
 }
-
 .banner h1 {
   margin: 0 0 20px 0;
   line-height: 1;
@@ -47,6 +107,71 @@
   letter-spacing: 0.14rem;
   font-weight: lighter;
 }
+
+@media (max-width: 1199px) {
+  .banner {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .banner {
+    font-size: 15px;
+  }
+  .banner .btn {
+    padding: 5px 10px;
+    min-width: 150px;
+  }
+  .banner .btn > span {
+    margin-left: 10px;
+  }
+  .banner .btn span:first-child {
+    font-size: 10px;
+  }
+  .banner .btn span span:last-child {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  h1,
+  .h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .banner {
+    font-size: 12px;
+  }
+  .banner .btn i {
+    font-size: 20px;
+  }
+  .banner .btn i.fa-google-play {
+    font-size: 16px;
+  }
+  .banner .btn span span:last-child {
+    letter-spacing: 0.02rem;
+  }
+  .banner .btn > span {
+    margin-left: 5px;
+  }
+  .banner .btn {
+    min-width: 110px;
+  }
+  .banner .btn span:first-child {
+    font-size: 8px;
+  }
+  .banner .btn {
+    margin-right: 5px;
+  }
+}
+@media (max-width: 575px) {
+  .order-last,
+  .order-first {
+    order: unset !important;
+  }
+}
+
+/*== end: banner ==*/
 
 .challenge {
   padding: 50px 0;
@@ -124,23 +249,6 @@
   width: 140px;
 }
 
-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background: #fff;
-  z-index: 1;
-  border-bottom: 1px solid rgb(172, 223, 206);
-}
-header .btn {
-  border-radius: 20px;
-  padding: 5px 25px;
-}
-
-.header,
-.banner {
-  position: relative;
-}
 .flMcpy::before {
   background: radial-gradient(
     53.8% 74.52% at 69.44% 0%,
@@ -175,21 +283,6 @@ header .btn {
 .btn {
   border-radius: 25px;
   padding: 10px 35px;
-}
-
-h1,
-.h1 {
-  font-size: 4.5rem;
-  font-weight: 800;
-}
-
-h2 {
-  font-weight: 800;
-  font-size: 2.5rem;
-}
-
-h5 {
-  font-weight: 600;
 }
 
 .challenge .col-4 {
