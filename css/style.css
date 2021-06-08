@@ -239,6 +239,7 @@ header .btn {
 .footer {
   padding: 10px 0;
   font-size: 0.9rem;
+  background: #f0f0f0;
 }
 /*== end: footer ==*/
 
@@ -385,29 +386,44 @@ aside.clients img {
 }
 
 .contact-section {
-  padding: 80px 0;
+  position: relative;
+}
+.contact-section:before {
   background: #0b4d0f;
-  color: #fff;
+  height: 500px;
+  content: "";
+  display: block;
+}
+.contact-section .container {
+  padding: 0 0 80px 0;
+  margin-top: -420px;
 }
 
 .contact-section .row {
-  padding-top: 25px;
+  /* padding-top: 25px; */
 }
 
 .contact-section input,
 .contact-section textarea {
   width: 100%;
-  padding: 15px;
-  border-radius: 35px;
-  border: 2px solid #062509;
-  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #edf0ed;
+  background: #edf0ed;
   margin-bottom: 15px;
   outline: none;
 }
 
 .contact-section textarea {
-  height: 200px;
+  height: 150px;
   resize: none;
+}
+.contact-section h2,
+.contact-section p {
+  color: #fff;
+}
+.contact-section h4 {
+  margin: 0 0 20px 0;
 }
 
 .our-team {
@@ -464,4 +480,17 @@ aside.clients img {
 
 .most-paper h2 {
   margin: 0 0 35px 0;
+}
+
+.contact-form-section {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 70px auto 0 auto;
+  box-shadow: 0 0 15px #ccc;
+}
+
+.contact-form-section img {
+  max-width: 100%;
 }
