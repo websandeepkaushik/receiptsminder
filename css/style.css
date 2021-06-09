@@ -76,7 +76,7 @@ header .btn {
   max-width: 500px;
   margin: 0 0 25px 0;
 }
-.banner .btn {
+.app-btns .btn {
   text-align: left;
   padding: 7px 15px;
   display: flex;
@@ -84,24 +84,24 @@ header .btn {
   min-width: 200px;
   margin-right: 10px;
 }
-.banner .btn i {
+.app-btns .btn i {
   float: left;
   font-size: 28px;
 }
-.banner .btn i.fa-google-play {
+.app-btns .btn i.fa-google-play {
   font-size: 24px;
 }
-.banner .btn > span {
+.app-btns .btn > span {
   display: block;
   margin-left: 15px;
   white-space: nowrap;
   line-height: 1;
 }
-.banner .btn span:first-child {
+.app-btns .btn span:first-child {
   display: block;
   font-size: 12px;
 }
-.banner .btn span span:last-child {
+.app-btns .btn span span:last-child {
   display: block;
   font-size: 20px;
   letter-spacing: 0.14rem;
@@ -448,13 +448,13 @@ aside.clients img {
   margin: 0 0 10px 0;
   color: #049509;
 }
-.our-team .nav {
+.nav.social-icons {
   font-size: 18px;
 }
-.our-team .nav li {
+.nav.social-icons li {
   margin: 0 4px;
 }
-.our-team .nav a {
+.nav.social-icons a {
   background: #fff;
   border: 1px solid #333;
   width: 35px;
@@ -463,9 +463,10 @@ aside.clients img {
   line-height: 35px;
   border-radius: 20px;
   color: #333;
+  text-align: center;
 }
 
-.our-team .nav a:hover {
+.nav.social-icons a:hover {
   background: #333;
   color: #fff;
 }
@@ -493,4 +494,29 @@ aside.clients img {
 
 .contact-form-section img {
   max-width: 100%;
+}
+
+.footer-top {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+.footer-top img {
+  max-width: 220px;
+}
+.footer-top .app-btns {
+  float: right;
+}
+.footer-top .app-btns .btn {
+  margin: 4px 0;
+  float: none;
+}
+.footer-right {
+  float: right;
+}
+.footer-right .nav {
+  float: left;
+}
+
+.footer-bottom {
+  padding: 10px 0 0 0;
 }
