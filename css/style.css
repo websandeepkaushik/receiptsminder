@@ -37,7 +37,7 @@ header {
   top: 0;
   background: #fff;
   z-index: 1;
-  border-bottom: 1px solid rgb(172, 223, 206);
+  /* border-bottom: 1px solid rgb(172, 223, 206); */
 }
 header .btn {
   border-radius: 20px;
@@ -64,9 +64,38 @@ header .btn {
 
 /*== start: banner ==*/
 .banner {
-  padding: 120px 0 100px 0;
+  padding: 0;
   font-size: 24px;
 }
+
+.banner-container {
+  background-color: #54c5c1;
+}
+
+.banner:before {
+  content: "";
+  display: block;
+  width: 120%;
+  height: 240px;
+  margin-top: 75px;
+  background-color: #54c5c1;
+  border-radius: 37% 57% 54% 42% / 60% 60% 40% 40%;
+  margin-left: -10%;
+}
+.banner:after {
+  content: "";
+  display: block;
+  width: 120%;
+  height: 240px;
+  margin-top: -145px;
+  background-color: #54c5c1;
+  border-radius: 37% 57% 54% 42% / 60% 60% 40% 40%;
+  margin-left: -10%;
+}
+.banner .container {
+  margin-top: -140px;
+}
+
 .banner h1 {
   margin: 0 0 20px 0;
   line-height: 1;
@@ -519,4 +548,54 @@ aside.clients img {
 
 .footer-bottom {
   padding: 10px 0 0 0;
+}
+
+.footer-new {
+  color: #fff;
+}
+
+.footer-new-container {
+  background-color: #00254d;
+  margin-top: -150px;
+  padding-bottom: 50px;
+}
+
+.footer-new:before {
+  content: "";
+  display: block;
+  width: 120%;
+  height: 240px;
+  margin-top: 75px;
+  background-color: #00254d;
+  border-radius: 37% 57% 54% 42% / 60% 60% 40% 40%;
+  margin-left: -10%;
+}
+
+.footer-new h5 {
+  color: #54c5c1;
+  font-weight: normal;
+}
+.footer-new a {
+  color: #fff;
+}
+
+.footer-new a {
+  padding: 5px 0;
+}
+
+.footer-new a:hover {
+  color: #fff;
+}
+
+.footer-new .app-btns {
+  float: right;
+}
+.footer-new .app-btns .btn {
+  margin: 7px 0;
+  float: none;
+}
+
+.footer-new .app-btns .btn:last-child {
+  background-color: #fff;
+  color: #333;
 }
