@@ -94,6 +94,8 @@ header .btn {
   font-size: 24px;
 }
 
+.banner img{max-width: 500px;}
+
 .banner-container {
   background-color: #54c5c1;
 }
@@ -113,13 +115,13 @@ header .btn {
   display: block;
   width: 120%;
   height: 240px;
-  margin-top: -145px;
+  margin-top: -170px;
   background-color: #54c5c1;
   border-radius: 37% 57% 54% 42% / 60% 60% 40% 40%;
   margin-left: -10%;
 }
 .banner .container {
-  margin-top: -140px;
+  margin-top: -170px;
 }
 
 .banner h1 {
@@ -130,6 +132,7 @@ header .btn {
 .banner p {
   max-width: 500px;
   margin: 0 0 25px 0;
+  font-size: 1.25rem;
 }
 .app-btns .btn {
   text-align: left;
@@ -260,7 +263,7 @@ header .btn {
 
 @media (min-width: 992px) {
   .navbar-nav li {
-    margin: 0 5px;
+    margin: 0 15px;
   }
 }
 
@@ -300,6 +303,7 @@ header .btn {
 
 .navbar-brand {
   padding: 0;
+  margin-right: 50px;
 }
 .navbar-brand img {
   width: 140px;
