@@ -115,7 +115,7 @@ header .btn {
   display: block;
   width: 120%;
   height: 240px;
-  margin-top: -170px;
+  margin-top: -90px;
   background-color: #54c5c1;
   border-radius: 37% 57% 54% 42% / 60% 60% 40% 40%;
   margin-left: -10%;
@@ -382,14 +382,14 @@ header .btn {
   width: 340px;
 }
 .work-with-us2 {
-  padding: 40px 0;
+  padding: 40px 0 110px 0;
   border-top: 5px solid #049509;
   border-bottom: 5px solid #049509;
 }
 .work-with-us2 .box div {
-  border-left: 1px solid #ccc;
-  padding-left: 20px;
-  padding-top: 20px;
+  /* border-left: 1px solid #ccc;
+  padding-left: 20px; */
+  /* padding-top: 20px; */
 }
 
 .work-with-us2 h3 {
@@ -444,7 +444,7 @@ aside.clients img {
   margin: 0 0 25px 0;
 }
 
-.contact-section {
+/* .contact-section {
   position: relative;
 }
 .contact-section:before {
@@ -456,12 +456,12 @@ aside.clients img {
 .contact-section .container {
   padding: 0 0 80px 0;
   margin-top: -420px;
-}
+} */
 
 .contact-section .row {
   /* padding-top: 25px; */
 }
-
+/* 
 .contact-section input,
 .contact-section textarea {
   width: 100%;
@@ -476,14 +476,14 @@ aside.clients img {
 .contact-section textarea {
   height: 150px;
   resize: none;
-}
-.contact-section h2,
+} */
+/* .contact-section h2,
 .contact-section p {
   color: #fff;
 }
 .contact-section h4 {
   margin: 0 0 20px 0;
-}
+} */
 
 .our-team {
   padding: 80px 0;
@@ -493,12 +493,17 @@ aside.clients img {
 .our-team h2 {
   margin: 0 0 35px 0;
 }
-.our-team img {
+.our-team .team-img {
   width: 250px;
-  border-radius: 50%;
+  border-radius: 30% 0;
   border: 4px solid #ccc;
+  overflow: hidden;
+  margin: 0 auto;
   margin-bottom: 10px;
 }
+.our-team .team-img img{max-width: 100%; transform: scale(1); transition: all 0.3s;}
+.our-team .team-img:hover img{transform: scale(1.2);}
+.our-team img
 .our-team h4 {
   font-size: 20px;
   font-weight: bold;
@@ -542,7 +547,7 @@ aside.clients img {
   margin: 0 0 35px 0;
 }
 
-.contact-form-section {
+/* .contact-form-section {
   background: #fff;
   padding: 25px;
   border-radius: 10px;
@@ -553,7 +558,7 @@ aside.clients img {
 
 .contact-form-section img {
   max-width: 100%;
-}
+} */
 
 .footer-top {
   border-bottom: 1px solid #ccc;
@@ -595,7 +600,7 @@ aside.clients img {
   display: block;
   width: 120%;
   height: 240px;
-  margin-top: 75px;
+  margin-top: -75px;
   background-color: #00254d;
   border-radius: 37% 57% 54% 42% / 60% 60% 40% 40%;
   margin-left: -10%;
@@ -633,3 +638,32 @@ aside.clients img {
 .download-btns img{margin: 5px 0;}
 .btn-primary{background-color: #0459b4; border-color: #0459b4;}
 h1{color: #00254d; font-size: 3.75rem; font-weight: 500;}
+
+/*== start: contact page ==*/
+h2{font-weight: 500;}
+.contact-page {
+  padding: 0;
+  /* font-size: 24px; */
+}
+
+.contact-section {
+  background-color: #d0f3f2;
+  padding: 40px 0 150px 0;
+}
+
+.contact-page:before {
+  content: "";
+  display: block;
+  width: 120%;
+  height: 240px;
+  margin-top: 75px;
+  background-color: #d0f3f2;
+  border-radius: 37% 57% 54% 42% / 60% 60% 40% 40%;
+  margin-left: -10%;
+}
+
+.contact-page .contact-section {
+  margin-top: -170px;
+}
+
+.contact-page img{max-width: 100%;}
