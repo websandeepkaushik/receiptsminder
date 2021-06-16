@@ -638,7 +638,7 @@ aside.clients img {
 .download-btns img{margin: 5px 0;}
 .btn-primary{background-color: #0459b4; border-color: #0459b4;}
 h1{color: #00254d; font-size: 3.75rem; font-weight: 500;}
-
+h2, h3, h4, h5{color: #00254d;}
 /*== start: contact page ==*/
 h2{font-weight: 500;}
 .contact-page {
