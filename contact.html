@@ -51,11 +51,11 @@
                             <p>We are here for you! How can we help?</p>
                             <br>
                             <div class="contact-form-section">
-                                <form class="row g-3 needs-validation" novalidate>
+                                <form class="row g-3 needs-validation" onsubmit="return false" novalidate>
                                     <div class="mb-3">
                                         <label for="inputName" class="form-label">Name<span
                                                 class="input-required">*</span></label>
-                                        <input type="text" class="form-control" id="inputName" required />
+                                        <input type="text" class="form-control" id="inputName" name="name" required />
                                         <div class="invalid-feedback">
                                             Please enter name
                                         </div>
@@ -63,7 +63,8 @@
                                     <div class="mb-3">
                                         <label for="inputEmail" class="form-label">Email address<span
                                                 class="input-required">*</span></label>
-                                        <input type="email" class="form-control" id="inputEmail" required />
+                                        <input type="email" class="form-control" id="inputEmail" name="email"
+                                            required />
                                         <div class="invalid-feedback">
                                             Please enter email address
                                         </div>
@@ -71,7 +72,7 @@
                                     <div class="mb-3">
                                         <label for="inputPhone" class="form-label">Phone<span
                                                 class="input-required">*</span></label>
-                                        <input type="text" class="form-control" id="inputPhone" required />
+                                        <input type="text" class="form-control" id="inputPhone" name="phone" required />
                                         <div class="invalid-feedback">
                                             Please enter phone number
                                         </div>
@@ -79,7 +80,7 @@
                                     <div class="mb-3">
                                         <label for="selectRegion" class="form-label">Region<span
                                                 class="input-required">*</span></label>
-                                        <select class="form-select" id="selectRegion" required>
+                                        <select class="form-select" id="selectRegion" name="region" required>
                                             <option value="" selected>Please Select</option>
                                             <option value="Scotland">Scotland</option>
                                             <option value="North East">North East</option>
@@ -100,7 +101,7 @@
                                     <div class="mb-3">
                                         <label for="selectHear" class="form-label">How did you first hear about
                                             Receipts Minder?<span class="input-required">*</span></label>
-                                        <select class="form-select" id="selectHear" required>
+                                        <select class="form-select" id="selectHear" name="firstHear" required>
                                             <option value="" selected>Please Select</option>
                                             <option value="Search Engine (Google, Bing, Yahoo, etc.)">Search Engine
                                                 (Google,
@@ -126,7 +127,8 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="textareaMessage" class="form-label">Message</label>
-                                        <textarea class="form-control" id="textareaMessage" rows="3"></textarea>
+                                        <textarea class="form-control" id="textareaMessage" rows="3"
+                                            name="message"></textarea>
                                     </div>
                                     <button class="btn btn-primary">Submit</button>
                                 </form>
@@ -211,11 +213,31 @@
                         if (!form.checkValidity()) {
                             event.preventDefault()
                             event.stopPropagation()
+                        } else {
+                            loadDoc()
                         }
-
                         form.classList.add('was-validated')
+                        return false
                     }, false)
                 })
+
+            function loadDoc() {
+                var xhttp = new XMLHttpRequest();
+                // xhttp.onreadystatechange = function () {
+                //     if (this.readyState == 4 && this.status == 200) {
+                //         // document.getElementById("demo").innerHTML =
+                //         //     this.responseText;
+                //         console.log('this.responseText--', this.responseText)
+                //     }
+                // };
+                xhttp.onload = function () {
+                    console.log('this.responseText--', this.responseText)
+                }
+                xhttp.open("POST", "mail.php");
+                xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+                xhttp.send("ok=yes");
+            }
         })()
     </script>
 </body>
