@@ -13,7 +13,7 @@
 
 <body>
     <div class="page">
-        <header class="">
+        <header class="static">
             <!-- bg-light -->
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
@@ -34,7 +34,7 @@
                                     <a class="nav-link" href="#">For Customers</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">For Retailers</a>
+                                    <a class="nav-link" href="retailer.html">For Retailers</a>
                                 </li>
                                 <!-- <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
@@ -485,6 +485,36 @@
         </div>
     </div>
     <script src='bootstrap/js/bootstrap.js'></script>
+    <!-- <script>
+        var scrollBefore = 0;
+        // document.getElementsByTagName('header')[0].className = 'static'
+
+        window.addEventListener('scroll', function (e) {
+            const scrolled = window.scrollY;
+
+            if (scrollBefore > scrolled) {
+                console.log("ScrollUP");
+                scrollBefore = scrolled;
+                //Desired action
+                if (scrolled > 70) {
+                    document.getElementsByTagName('header')[0].className = 'fixed'
+                } else {
+                    document.getElementsByTagName('header')[0].className = 'static'
+                }
+            } else {
+                scrollBefore = scrolled;
+                console.log("ScrollDOWN");
+                //Desired action
+                if (scrolled > 70) {
+                    document.getElementsByTagName('header')[0].className = ''
+                } else {
+                    document.getElementsByTagName('header')[0].className = 'static'
+                }
+                //Desired action
+            }
+
+        })
+    </script> -->
 </body>
 
 </html>
