@@ -245,16 +245,16 @@ header .btn {
 }
 
 .challenge i {
-  font-size: 90px;
+  font-size: 48px;
   color: #049509;
   margin-bottom: 10px;
 }
 
 .challenge .card {
   border: none;
-  margin: 30px 0;
+  margin: 20px 0;
   padding: 10px 0;
-  cursor: pointer;
+  /* cursor: pointer; */
   background: transparent;
   transition: all 0.3s;
   border-radius: 5px;
@@ -708,5 +708,46 @@ h2{font-weight: 500;}
 .contact-page img{max-width: 100%;}
 
 .input-required{color: red;}
-.our-solution{background: #f2fdf2;}
+.our-solution .solution-container{background: #f2fdf2; margin-top: -140px; padding-bottom: 70px;}
 .btn-success{background-color: #049509; border-color: #049509;}
+
+
+.challenge.our-solution:before {
+  content: "";
+  display: block;
+  width: 120%;
+  height: 240px;
+  margin-top: 75px;
+  background-color: #f2fdf2;
+  border-radius: 37% 57% 54% 42% / 60% 60% 40% 40%;
+  margin-left: -10%;
+}
+
+.challenge.our-solution i {
+font-size: 90px;
+margin-bottom: 30px;
+}
+.challenge.our-solution .card-body {
+  padding: 0;
+}
+
+.challenge.icon-effect .card:hover{padding: 0 0 20px 0;}
+.challenge.icon-effect .card:hover i{
+  opacity: 0;
+  /* font-size: 30px; */
+}
+.challenge.icon-effect i.hover {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  margin-top: -70px;
+  font-size: 140px;
+  z-index: -1;
+  opacity: 0;
+}
+.challenge.icon-effect .card:hover i.hover{
+  opacity: 0.2;
+  color: #049509;
+  /* font-size: 140px; */
+}
