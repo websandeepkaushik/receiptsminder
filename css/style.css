@@ -754,3 +754,19 @@ margin-bottom: 30px;
   position: fixed;
   top: 60px;
 }
+
+
+.inner-banner{padding-top: 100px;}
+.inner-banner .container{
+  /* background: url(../images/logocopy2.svg) no-repeat; */
+  /* background-size: 100% 100%; */
+  position: relative;
+}
+.inner-banner-content{
+  position: absolute;
+  top: 0;
+  padding: 140px 240px;
+  /* text-align: center; */
+  font-size: 1.25rem;
+}
+.inner-banner h1{}
