@@ -1,0 +1,52 @@
+@media (max-width: 1199px) {
+    h1,
+    .h1 {
+      font-size: 3.5rem;
+    }
+    .banner p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 991px) {
+    h1,
+    .h1 {
+      font-size: 1.7rem;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .banner:before {
+        width: 140%;
+        margin-left: -20%;
+    }
+    .banner .container {
+        margin-top: -190px;
+    }
+    .banner:after {
+        width: 140%;
+        margin-top: -180px;
+        margin-left: -20%;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner img{max-width: 50%;}
+    .banner{text-align: center;}
+    .banner .order-last{margin-bottom: 20px;}
+}
+
+@media (max-width: 479px) {
+    .banner:before {
+        width: 180%;
+        margin-left: -40%;
+    }
+    .banner .container {
+        margin-top: -190px;
+    }
+    .banner:after {
+        width: 180%;
+        margin-top: -180px;
+        margin-left: -40%;
+    }
+}

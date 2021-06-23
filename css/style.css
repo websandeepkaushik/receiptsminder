@@ -42,19 +42,6 @@ h2 {
 h5 {
   font-weight: 500;
 }
-@media (max-width: 1199px) {
-  h1,
-  .h1 {
-    font-size: 3.5rem;
-  }
-}
-
-@media (max-width: 991px) {
-  h1,
-  .h1 {
-    font-size: 2.5rem;
-  }
-}
 
 /*== start: header ==*/
 header {
@@ -103,7 +90,7 @@ header .btn {
   font-size: 24px;
 }
 
-.banner img{max-width: 500px;}
+.banner img{width: 500px;}
 
 .banner-container {
   background-color: #54c5c1;
