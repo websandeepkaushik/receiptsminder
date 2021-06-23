@@ -519,7 +519,7 @@ aside.clients img {
   margin: 0 0 35px 0;
 }
 .our-team .team-img {
-  width: 250px;
+  max-width: 250px;
   /* border-radius: 30% 0; */
   border: 1px solid #ccc;
   overflow: hidden;
