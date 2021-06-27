@@ -93,6 +93,8 @@ header .btn {
 .banner img{width: 500px;}
 
 .banner-container {
+  background: url(../images/Header-Bg-Image_01.png) no-repeat center center;
+  background-size: 100% 100%;
   background-color: #54c5c1;
 }
 
@@ -115,6 +117,8 @@ header .btn {
   background-color: #54c5c1;
   border-radius: 37% 57% 54% 42% / 60% 60% 40% 40%;
   margin-left: -10%;
+  z-index: -1;
+  position: relative;
 }
 .banner .container {
   margin-top: -170px;
