@@ -613,6 +613,9 @@ aside.clients img {
 
 .footer-bottom {
   padding: 10px 0 0 0;
+  font-size: 13px;
+  border-top: 1px solid #1a4b80;
+  margin-top: 10px;
 }
 
 .footer-new {
@@ -741,9 +744,17 @@ margin-bottom: 30px;
   /* font-size: 140px; */
 }
 
+.fixed-container{
+  position: relative;
+}
 .card.fixed-box{
   position: fixed;
   top: 60px;
+}
+.card.abs-box{
+  position: absolute;
+  top: auto;
+  bottom: 0;
 }
 
 
@@ -760,4 +771,5 @@ margin-bottom: 30px;
   /* text-align: center; */
   font-size: 1.25rem;
 }
-.inner-banner h1{}
+
+.footer-bottom{}
