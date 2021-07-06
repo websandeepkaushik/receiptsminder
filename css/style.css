@@ -750,6 +750,7 @@ margin-bottom: 30px;
 .card.fixed-box{
   position: fixed;
   top: 60px;
+  width: calc(1020px - 52%);
 }
 .card.abs-box{
   position: absolute;
@@ -851,4 +852,20 @@ margin-bottom: 30px;
 .word span:nth-child(6)
 {
     animation-delay: 10s;
+}
+
+.app-links img{width: 150px;}
+
+.contact-section ul li{margin-bottom: 20px;}
+
+
+.banner.color-1:before, .banner.color-1:after, .banner.color-1 .banner-container{
+background-color: #c2d8f1;
+}
+
+.banner{z-index: 1;}
+header{z-index: 2;}
+.contact-page.challenge .contact-section{padding-top: 120px;}
+.contact-page.challenge:before {
+  margin-top: -125px;
 }
