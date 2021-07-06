@@ -869,3 +869,4 @@ header{z-index: 2;}
 .contact-page.challenge:before {
   margin-top: -125px;
 }
+.contact-page.challenge .col-md-8 h3{margin-bottom: 50px;}

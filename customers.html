@@ -53,7 +53,7 @@
                             <img src="images/banner.png" alt="" class="img-fluid" />
                         </div>
                         <div class="col-sm-6 order-first" data-aos="fade-right">
-                            <h2>We are Receipts Minders (pledged to remove paper based receipts)</h2>
+                            <h2>We <span id="demo"></span></h2>
                             <p>A secure and intelligent platform for managing receipts digitally to help businesses and
                                 customers engage efficiently while making a positive impact on the environment.</p>
                             <div class="app-links">
@@ -331,6 +331,27 @@
             }
 
         })
+    </script>
+    <script>
+        var i = 0;
+        var txt = 'are Receipts Minders (pledged to remove paper based receipts)';
+        var speed = 50;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            } else {
+
+                setTimeout(() => {
+                    i = -1;
+                    document.getElementById("demo").innerHTML = "";
+                    typeWriter()
+                }, 500);
+            }
+        }
+        typeWriter()
     </script>
 </body>
 
