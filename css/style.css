@@ -272,11 +272,6 @@ header .btn {
 .challenge .card:hover h3{
   color: #049509;
 }
-.challenge .card:hover .btn{
-  background-color: #00254d;
-  border-color: #00254d;
-}
-
 .dummy-img {
   background: rgb(123, 238, 171);
   width: 100px;
@@ -909,3 +904,11 @@ header{z-index: 2;}
 .faq-section .accordion-button:not(.collapsed){background: none; color: inherit; box-shadow: unset;}
 
 .card-img-top {height: 120px; margin: 0 auto;}
+.btn-primary{
+  background-color: #00254d;
+  border-color: #00254d;
+}
+.btn-primary:hover {
+  background-color: #033870;
+  border-color: #033870;
+}
